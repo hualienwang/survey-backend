@@ -1,6 +1,7 @@
 # 文件: crud.py
 from sqlmodel import Session, select
-from models import Survey, Response, SurveyCreate, ResponseCreate
+from models import Survey, Response
+from schemas import SurveyCreate, ResponseCreate
 from typing import List
 import uuid
 
