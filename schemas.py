@@ -23,7 +23,7 @@ class ResponseBase(BaseModel):
     text_response: Optional[str] = None
 
 class ResponseCreate(ResponseBase):
-    pass
+    file_response_path: Optional[str] = None
 
 class ResponseRead(ResponseBase):
     id: uuid.UUID
