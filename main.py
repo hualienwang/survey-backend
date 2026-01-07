@@ -5,7 +5,8 @@ from contextlib import asynccontextmanager
 from typing import List, Optional
 import os
 import uuid
-from models import Survey, Response, SurveyRead, ResponseRead
+from models import Survey, Response
+from schemas import SurveyRead, ResponseRead
 from schemas import SurveyCreate, ResponseCreate
 from crud import create_survey, get_survey_by_id, get_all_surveys, get_survey_ids, create_response, get_response_by_id, get_responses_by_survey_id, get_all_responses
 from database import engine, get_session
